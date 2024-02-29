@@ -1,0 +1,113 @@
+import { StyleSheet } from "react-native";
+import { themeColors } from "../theme/theme";
+
+export default styles = StyleSheet.create({
+  profileScreen: { marginVertical: 20, gap: 20, paddingHorizontal: 10 },
+  profilePhoto: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  photo: {
+    width: 42,
+    height: 42,
+    borderRadius: 50,
+  },
+  menuIcon: { marginRight: -8 },
+  description: { paddingHorizontal: 14 },
+  heading: {
+    color: themeColors.bgColor(1),
+    fontSize: 20,
+    fontWeight: "600",
+    paddingBottom: 10,
+  },
+  inputBox: {
+    borderWidth: 1,
+    borderColor: themeColors.bgColor(0.3),
+    paddingHorizontal: 8,
+    borderRadius: 8,
+    backgroundColor: "#fff",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  descriptionText: {
+    fontSize: 18,
+    lineHeight: 22,
+    flexDirection: "row",
+    textAlignVertical: "top",
+  },
+  personalInfo: { gap: 20 },
+  label: {
+    color: themeColors.bgColor(1),
+    fontSize: 20,
+    fontWeight: "600",
+    paddingHorizontal: 10,
+    paddingBottom: 10,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: themeColors.bgColor(0.3),
+    borderRadius: 12,
+    paddingHorizontal: 24,
+    paddingVertical: 14,
+    fontSize: 20,
+    lineHeight: 28,
+  },
+  submitBtnBox: {
+    alignItems: "center",
+  },
+  submitBtn: {
+    width: "90%",
+    paddingVertical: 10,
+    paddingHorizontal: 18,
+    borderWidth: 1,
+    borderRadius: 50,
+    borderColor: themeColors.secondaryText(1),
+    backgroundColor: themeColors.secondaryText(1),
+  },
+  btnText: {
+    fontSize: 22,
+    color: "#fff",
+    fontWeight: "500",
+    textAlign: "center",
+  },
+  modalBox: {
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 1,
+  },
+  datePicker: {
+    width: "90%",
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: themeColors.secondaryText(0.3),
+    borderRadius: 8,
+    paddingVertical: 12,
+    shadowColor: themeColors.secondaryText(1),
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 4,
+    elevation: 10,
+  },
+  modalBtnBox: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    paddingHorizontal: 20,
+  },
+  modalBtn: {
+    paddingHorizontal: 26,
+    paddingVertical: 4,
+    borderWidth: 1,
+    borderRadius: 8,
+    borderColor: themeColors.secondaryText(1),
+    backgroundColor: themeColors.secondaryText(1),
+  },
+  modalBtnText: {
+    fontSize: 22,
+    fontWeight: "500",
+    color: "#fff",
+  },
+});
